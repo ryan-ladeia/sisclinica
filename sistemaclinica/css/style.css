@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    background-image: linear-gradient(to left, #063949, #0f5367, #19647a, #063949);
+    animation: degrade-animado 10s infinite alternate;
+    background-size: 500% 100%;
+}
+
+
+.container {
+    display: flex;
+    padding: 20px;
+    max-height: 100%;
+    z-index: 1000;
+}
+
+
+
+.sidebar {
+    padding: 20px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+    
+
+.sidebar .menu-item {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .menu-item:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-3px);
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 100px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    height: 140vh auto;
+}
+
+.main-contentinicio {
+    flex: 1;
+    margin-left: 100px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    height: 700px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.main-content-cad {
+    flex: 1;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    height: auto;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.main-content-inicio {
+    height: 50%;
+    font-size: 20px;
+    margin: auto;
+    padding: 135px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+button {
+    background-image: linear-gradient(to left, #063949, #0f5367, #19647a, #063949);
+    background-size: 500% 100%;
+    animation: degrade-animado 10s infinite alternate;
+    width: 520px;
+    padding: 15px 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    
+}
+
+button:hover {
+    transition: all 0.3s ease;
+    padding: 17px 45px;
+}
+
+.cad-button {
+    background-image: linear-gradient(to left, #063949, #0f5367, #19647a, #063949);
+    background-size: 500% 100%;
+    animation: degrade-animado 10s infinite alternate;
+    width: 520px;
+    padding: 15px 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    
+}
+
+.cad-button:hover {
+    transition: all 0.3s ease;
+    padding: 17px 45px;
+}
+.success-button {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to left, #063949, #0f5367, #19647a, #063949);
+    background-size: 500% 100%;
+    animation: degrade-animado 10s infinite alternate;
+    width: 200px;
+    padding: 15px 40px;
+    margin-top: 320px;
+    margin-left: 100px;
+    border-radius: 100px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    
+}
+
+.success-button:hover {
+    transition: all 0.3s ease;
+    padding: 17px 45px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-row button {
+    flex: 1;
+    padding: 15px 40px;
+    border-radius: 100px;
+    width: 250px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to left, #063949, #0f5367, #19647a, #063949);
+    background-size: 500% 100%;
+    animation: degrade-animado 10s infinite alternate;
+}
+
+.button-row button:hover {
+    transition: all 0.3s ease;
+    padding: 17px 45px;
+}
+
+.menu {
+    margin-top: 50px;
+}
+
+.add-patient-btn {
+    color: #fff;
+    background-color: #063949;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.report {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.report-item {
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+    background-color: #063949;
+}
+
+-------form------
+form {
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 20px;
+}
+
+.form-group {
+    width: 350px; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form select
+ {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5%;
+    margin-top: 5%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    background-color: #f7f8fc;
+    font-weight: bold;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-size: 16px;
+}
+
+
+
+form .form-group.full-width {
+    width: 100%; 
+}
+
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #063949;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #003366;
+}
+
+.header-cad {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+    align-items: center;
+    background-image: linear-gradient(to left, #063949, #0f5367, #19647a, #063949);
+    background-size: 500% 100%;
+    animation: degrade-animado 10s infinite alternate;
+    border-radius: 10px;
+}
+
+.header-crud {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+    align-items: center;
+    background-image: linear-gradient(to left, #3e5962, #626e72, #19647a, #4c2626);
+    background-size: 500% 100%;
+    border-radius: 10px;
+}
+
+h1{
+    margin-left: 35px;
+    text-align: left;
+    padding: 0px;
+ }
+ 
+ .add{
+     margin-right: 35px;
+ }
+
+.status-agendada {
+    color: green;
+}
+
+.status-cancelada {
+    color: red;
+}
+
+table {
+    width: 100%;
+}
+
+thead {
+    display: noneflex;
+    flex-wrap: wrap;
+    gap:fle 20px;
+    justify-content: center;
+}
+
+tr {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+td {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    text-align: left;
+}
+
+td:first-child {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #063949;
+}
+
+tbody{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 100%;
+    width: 100%;
+       
+}
+
+td:last-child {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #063949;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0f5367;
+}
+
+
+form {
+    display: inline-block;
+    margin: 0;
+}
+
+.main-content-cad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 100px;
+    height: 140vh auto;
+
+}
+
+.paciente-card {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.paciente-card h4 {
+    background-color: #243951;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.paciente-card p {
+    margin: 5px 0;
+    color: #333;
+}
